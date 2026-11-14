@@ -1,0 +1,28 @@
+````markdown
+# Boiling point and safe water
+
+Written by [NAME] (@[USERNAME]). My part in OFFGRID: [one honest sentence about your part in this feature].
+
+## The idea
+
+On a trek, water from streams and lakes is often boiled before drinking. Up high, water boils at a lower temperature, so cooking takes longer and germs need more time to be killed. This feature gives two simple answers for any altitude.
+
+## How it works
+
+- **Boiling point:** it falls by about 1 °C for every 300 m of altitude. At 0 m it is 100 °C, at 3,000 m about 90 °C and at 4,500 m about 85 °C. This is a good guide up to about 5,000 m.
+- **Boiling time for safe water:** following the US Centers for Disease Control and Prevention (CDC), keep water at a rolling boil for 1 minute, or 3 minutes above about 2,000 m (6,500 ft).
+
+## Where the code lives
+
+- `packages/core/src/boilingPoint.ts`: the two functions (pure maths, works offline).
+- `packages/core/test/boilingPoint.test.ts`: automated tests that check the examples above.
+
+## Limits
+
+This is a tested building block. It does not appear on a screen yet; the team can connect it later, for example in the safety card. Boiling only deals with germs. It does not remove chemicals. The boiling point is an estimate, not a measurement.
+
+## What I worked on
+
+[Write 3 to 5 lines about what you checked, tested or understood, for example reading the CDC advice or checking the 3,000 m example.]
+
+_Drafted with an AI assistant from the project's code, then checked and edited by [NAME]._
