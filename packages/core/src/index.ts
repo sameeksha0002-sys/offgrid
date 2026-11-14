@@ -35,3 +35,4 @@ export * from "./game/fairplay";
 export * from "./compare";
 export * from "./apiTypes";
 export * from "./beacon/packet";
+export * from "./trekTime";
