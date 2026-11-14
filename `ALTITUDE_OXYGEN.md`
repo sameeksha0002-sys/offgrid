@@ -1,0 +1,34 @@
+# Oxygen at altitude
+
+Written by Priya Prasad (@Priyaprasad26). My part in OFFGRID: I contributed by understanding the feature's functionality, reviewing its implementation and documenting its practical relevance to high-altitude trekking.
+
+## The idea
+
+Altitude sickness is one of the biggest risks on Himalayan treks. The air up high is still about 21% oxygen, but it is thinner, so each breath gives you less. This feature turns an altitude into a simple number that people can understand.
+
+## How it works
+
+The code uses the standard-atmosphere formula for air pressure at a given height, then compares it with sea level. Examples:
+
+- At 0 m: 100% (sea level).
+- At 3,000 m: about 69% of the oxygen per breath.
+- At 5,500 m: about 50%, which is half.
+
+It also writes one plain sentence, such as: "At 3,000 m each breath carries about 69% of the oxygen it would at sea level."
+
+The functions only accept altitudes from 0 to 9,000 m (the highest any place in the app can be). Anything else gives a clear error.
+
+## Where the code lives
+
+- `packages/core/src/altitudeOxygen.ts`: the pressure and oxygen functions (pure maths, works offline).
+- `packages/core/test/altitudeOxygen.test.ts`: automated tests that check the values above.
+
+## Limits
+
+This is a tested building block. It does not appear on a screen yet; the team can connect it later, for example next to a place's maximum altitude. It is an estimate for a standard day, not medical advice. Altitude sickness depends on how fast you climb, not just on how high you are, and the app's safety guide covers that.
+
+## What I worked on
+
+I understood how altitude affects oxygen availability. I reviewed the pressure and oxygen calculation logic, examined the examples at 3,000 m and 5,500 m, and went through the test cases and input limitations.
+
+_Drafted with an AI assistant from the project's code, then checked and edited by Priya Prasad._
