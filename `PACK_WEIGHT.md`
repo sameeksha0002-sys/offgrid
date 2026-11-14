@@ -1,0 +1,32 @@
+````markdown
+# Pack weight guide
+
+Written by [NAME] (@[USERNAME]). My part in OFFGRID: [one honest sentence about your part in this feature].
+
+## The idea
+
+A pack that is too heavy makes a trek slower, more tiring and more dangerous. A common rule of thumb is to carry no more than about 20% of your body weight. This feature does that sum so the app can show people a sensible limit for their packing list.
+
+## How it works
+
+- The heaviest recommended pack is 20% of body weight, rounded down to the nearest half kilo. For example, 60 kg gives 12 kg, and 55 kg gives 11 kg.
+- A second function gives a pack's weight as a percent of body weight. For example, a 10 kg pack on a 50 kg person is 20%.
+- A third says whether a pack is too heavy. Exactly 20% is allowed; anything above is "too heavy".
+
+Bad inputs, such as a zero or negative body weight, give a clear error.
+
+## Where the code lives
+
+- `packages/core/src/packWeight.ts`: the functions (pure maths, works offline).
+- `packages/core/test/packWeight.test.ts`: automated tests that check the examples above.
+
+## Limits
+
+This is a tested building block. It does not appear on a screen yet; the team can connect it later, for example next to the packing list. The 20% figure is a general rule of thumb, not medical advice. Fitness, terrain and the length of the trek all matter.
+
+## What I worked on
+
+[Write 3 to 5 lines about what you checked, tested or understood, for example trying your own body weight in the examples or reading the tests.]
+
+_Drafted with an AI assistant from the project's code, then checked and edited by [NAME]._
+````
