@@ -36,3 +36,8 @@ export * from "./compare";
 export * from "./apiTypes";
 export * from "./beacon/packet";
 export * from "./trekTime";
+export * from "./units";
+export * from "./altitudeOxygen";
+export * from "./packWeight";
+export * from "./windChill";
+export * from "./boilingPoint";
