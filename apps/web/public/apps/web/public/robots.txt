@@ -1,0 +1,8 @@
+# OFFGRID: tell search engines what to leave out.
+# Emergency live-status pages (opened from an SOS link) show a person's location,
+# so they should never appear in search results.
+
+User-agent: *
+Allow: /
+Disallow: /*?*view=sos-status
+Disallow: /*?*token=
