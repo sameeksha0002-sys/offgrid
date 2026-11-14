@@ -41,3 +41,5 @@ export * from "./altitudeOxygen";
 export * from "./packWeight";
 export * from "./windChill";
 export * from "./boilingPoint";
+export * from "./packWeight";
+export * from "./boilingPoint";
